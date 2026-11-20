@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Bacha ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ffc1d9, #d9b3ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 20px 0;
+        }
+
+        .box {
+            background: rgba(255,255,255,0.85);
+            padding: 30px 25px;
+            border-radius: 25px;
+            width: 88%;
+            max-width: 380px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            z-index: 2;
+        }
+
+        .teddy {
+            font-size: 80px;
+            animation: bounce 2s infinite;
+        }
+
+        h1 {
+            color: #e75480;
+            margin: 15px 0;
+            font-size: 27px;
+        }
+
+        p {
+            color: #754568;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #e75480;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .heart {
+            position: fixed;
+            font-size: 22px;
+            animation: float 5s linear forwards;
+            bottom: -30px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes float {
+            to {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        .letter {
+            background: #fff0f5;
+            padding: 20px;
+            border-radius: 18px;
+            border: 2px dashed #e75480;
+            text-align: left;
+        }
+
+        .letter p {
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="box" id="mainBox">
+
+        <div class="teddy">🧸</div>
+
+        <h1>Hey Bacha! ❤️</h1>
+
+        <p>
+            I have something special for you...
+            <br><br>
+            Please open your heart and read this. 💗
+        </p>
+
+        <button onclick="nextPage()">
+            Open Here 💌
+        </button>
+
+    </div>
+
+
+    <script>
+
+        // PAGE 1 TO PAGE 2
+
+        function nextPage() {
+
+            document.getElementById("mainBox").innerHTML = `
+
+                <div class="teddy">🥺🧸</div>
+
+                <h1>I'm Sorry Bacha! 💗</h1>
+
+                <p>
+                    I know I made a mistake.
+                    <br><br>
+                    I never wanted to hurt you.
+                    <br><br>
+                    You are really special to me.
+                    <br><br>
+                    Please read my little message. ❤️
+                </p>
+
+                <button onclick="thirdPage()">
+                    Next 💌
+                </button>
+
+            `;
+
+        }
+
+
+        // PAGE 2 TO PAGE 3
+
+        function thirdPage() {
+
+            document.getElementById("mainBox").innerHTML = `
+
+                <div class="teddy">💗🧸</div>
+
+                <h1>One Thing...</h1>
+
+                <p>
+                    You deserve happiness,
+                    respect and lots of smiles.
+                    <br><br>
+                    I'm truly sorry, Bacha! 🥺
+                    <br><br>
+                    I have written something for you.
+                </p>
+
+                <button onclick="letterPage()">
+                    Next 💌
+                </button>
+
+            `;
+
+        }
+
+
+        // PAGE 3 TO LETTER PAGE
+
+        function letterPage() {
+
+            document.getElementById("mainBox").innerHTML = `
+
+                <div class="teddy">💌</div>
+
+                <h1>A Letter For You</h1>
+
+                <p>
+                    Bacha, tumhare liye kuch likha hai.
+                    <br><br>
+                    Ek baar open karke padhna. 🥺❤️
+                </p>
+
+                <button onclick="openLetter()">
+                    Open My Letter 💗
+                </button>
+
+            `;
+
+        }
+
+
+        // OPEN PERSONAL LETTER
+
+        function openLetter() {
+
+            document.getElementById("mainBox").innerHTML = `
+
+                <div class="teddy">🧸💗</div>
+
+                <h1>Dear Bacha ❤️</h1>
+
+                <div class="letter">
+
+                    <p>
+
+                        Yrr mujhe pta h maine galti ki h
+                        aur shyd meri wajah se tum hurt bhi hui ho.
+
+                        <br><br>
+
+                        Mera intention kbhi bhi tumhe hurt
+                        krne ka nhi tha.
+
+                        <br><br>
+
+                        Mujhe pta h sirf sorry bolne se sb
+                        thik nhi hota, but trust me I'm
+                        genuinely sorry. 🥺
+
+                        <br><br>
+
+                        Tum mere liye bhut special ho aur
+                        mai kbhi nhi chahta ki meri wajah
+                        se tumhare face pe smile ki jagah
+                        sadness aaye.
+
+                        <br><br>
+
+                        Bas ek baar meri baat samajhne
+                        ki koshish krna. ❤️
+
+                        <br><br>
+
+                        I'm really sorry Bacha! 🧸
+
+                        <br><br>
+
+                        Tumhara,
+                        <br>
+                        Arya ❤️
+
+                       <br><br>
+
+                       <button onclick="surprisePage()">
+                           One Last Thing 💗
+                       </button>
+                    </p>
+
+                </div>
+
+            `;
+
+        }
+
+      // SPECIAL SURPRISE PAGE
+
+function surprisePage() {
+
+    document.getElementById("mainBox").innerHTML = `
+
+        <div class="teddy">🧸💗</div>
+
+        <h1>For My Bacha ❤️</h1>
+
+        <p>
+            No matter what happens,
+            <br><br>
+            I genuinely wish to see you happy.
+            <br><br>
+            Your smile is precious. 🥺
+            <br><br>
+            Thank you for being special.
+            <br><br>
+            Sending you lots of love! 💗
+        </p>
+
+        <h1>🤗❤️🧸</h1>
+
+        <p>Always take care, Bacha!</p>
+
+    `;
+
+}
+
+        // FLOATING HEARTS
+
+        function createHeart() {
+
+            let heart = document.createElement("div");
+
+            heart.className = "heart";
+            heart.innerHTML = "💗";
+
+            heart.style.left = Math.random() * 100 + "vw";
+
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+                heart.remove();
+            }, 5000);
+
+        }
+
+        setInterval(createHeart, 500);
+
+    </script>
+
+</body>
+</html>
